@@ -1,0 +1,20 @@
+name: Build and Test My Blog
+
+# Akce se spustí při každém pushnutí kódu do větve main
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Build Docker image
+      run: docker build -t muj-web-blog:latest .
+
+    - name: Test Docker image
+      run: docker run --name test-web -d -p 8080:80 muj-web-blog:latest
