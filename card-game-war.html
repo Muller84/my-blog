@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Card Game War - CodeFlows</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+    </head>
+    <body class="single is-preload">
+
+        <div id="wrapper">
+
+            <header id="header">
+                <h1><a href="index.html">CodeFlows</a></h1>
+                <nav class="links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">My projects</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                    </ul>
+                </nav>
+                <nav class="main">
+                    <ul>
+                        <li class="search">
+                            <a class="fa-search" href="#search">Search</a>
+                            <form id="search" method="get" action="#">
+                                <input type="text" name="query" placeholder="Search" />
+                            </form>
+                        </li>
+                        <li class="menu">
+                            <a class="fa-bars" href="#menu">Menu</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+            <section id="menu">
+                <section>
+                    <ul class="links">
+                        <li><a href="index.html"><h3>Home</h3><p>Back to the main page</p></a></li>
+                        <li><a href="projects.html"><h3>My Projects</h3><p>Overview of all my work</p></a></li>
+                        <li><a href="about.html"><h3>About Me</h3><p>Learn more about my background</p></a></li>
+                    </ul>
+                </section>
+                <section>
+                    <ul class="actions stacked">
+                        <li><a href="https://github.com/Muller84?tab=repositories" class="button large fit icon brands fa-github" target="_blank" rel="noopener noreferrer">GitHub Profile</a></li>
+                    </ul>
+                </section>
+            </section>
+
+            <div id="main">
+                <article class="post">
+                    <header>
+                        <div class="title">
+                            <nav style="margin-bottom: 30px; font-size: 0.8em; text-transform: uppercase; letter-spacing: 2px;">
+                                <a href="index.html" style="border-bottom: none; color: #888;">Home</a> 
+                                <span style="margin: 0 10px; color: #ccc;">/</span> 
+                                <a href="projects.html" style="border-bottom: none; color: #888;">Projects</a>
+                                <span style="margin: 0 10px; color: #ccc;">/</span> 
+                                <span style="color: #3b3b3b; font-weight: 700;">Python & Pygame</span>
+                            </nav>
+                            <h2><a href="#">WAR: Card Battle in Python with Pygame</a></h2>
+                            <p>Developing a 2D digital version of the classic card game.</p>
+                        </div>
+                        <div class="meta">
+                            <time class="published" datetime="2024-12-16">December 16, 2024</time>
+                            <a href="about.html" class="author"><span class="name">Martina</span><img src="images/avatar.jpg" alt="Martina" /></a>
+                        </div>
+                    </header>
+
+                    <span class="image featured"><img src="images/card_game2.png" alt="Card Game War Banner" /></span>
+
+                    <p>War is a simple but exciting card game that almost everyone knows. I decided to convert it into a digital form using Python and the Pygame library, creating my own visual version of this classic. The project combines work with graphics, user interface, animations and basic game logic.</p>
+
+                    <div class="row">
+                        <div class="col-8 col-12-small">
+                            <h3>Pygame Assets & UI</h3>
+                            <p>The core of the development involved handling various assets and game states. I focused on creating a clear game interface with custom-made graphical elements. Key technical features include loading and scaling card images, implementing animation for flipping cards, and building a modular deck logic that handles scores and game progress automatically.</p>
+                        </div>
+                        <div class="col-4 col-12-small">
+							<span class="image fit">
+								<img src="images/card_game_war_menu.jpg" 
+									alt="Game Menu UI" 
+									style="border-radius: 8px; width: 80%; margin: 0 auto;" />
+							</span>
+						</div>
+                    </div>
+
+                    <h3>Game Features</h3>
+                    <ul>
+                        <li>Graphical menu with customized interactive buttons.</li>
+                        <li>Automated "War" phase for tie-breaking scenarios.</li>
+                        <li>Dynamic scaling of assets for different screen layouts.</li>
+                        <li>Event-driven game loop for smooth user interactions.</li>
+                    </ul>
+
+                    <h3>Reflection & Professional Growth</h3>
+                    <p>Building this game was my first deep dive into <strong>2D game development</strong>. It forced me to think about code organization differently, especially when managing simultaneous animations and game states. I learned the importance of separating game logic from the rendering loop.</p>
+
+                    <div class="row">
+                        <div class="col-6 col-12-medium">
+                            <h4>Key Challenges Overcome</h4>
+                            <ul>
+                                <li>Synchronizing animations with the underlying game state.</li>
+                                <li>Efficient asset management to prevent memory lag.</li>
+                                <li>Creating a responsive UI within the <strong>Pygame event loop</strong>.</li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-12-medium">
+                            <h4>Technical Takeaways</h4>
+                            <ul>
+                                <li>Advanced understanding of <strong>OOP in Python</strong>.</li>
+                                <li>Practical experience with 2D coordinate systems.</li>
+                                <li>Handling user input and event-driven programming.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <blockquote>
+                        "The goal was not only to create a functional game, but also to try working with assets, event loops, and classes. WAR proved to be a great training ground for mastering modular logic in Python."
+                    </blockquote>
+
+                    <footer>
+                        <ul class="stats">
+                            <li><a href="projects.html">Game Development</a></li>
+                            <li><a href="https://www.python.org" class="icon solid fa-code" target="_blank" rel="noopener noreferrer"> Python</a></li>
+                            <li><a href="https://github.com/Muller84/cardGameWar" class="icon brands fa-github" target="_blank" rel="noopener noreferrer"> GitHub</a></li>
+                        </ul>
+                    </footer>
+
+                    <hr />
+                    <section>
+                        <ul class="actions fit">
+                            <li><a href="github-guide.html" class="button primary fit icon solid fa-arrow-right">Next Project: GitHub Guide</a></li>
+                        </ul>
+                    </section>
+
+                </article>
+            </div>
+
+            <section id="footer">
+                <ul class="icons">
+                    <li><a href="https://github.com/Muller84" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+                    <li><a href="https://www.linkedin.com/in/martina-müllerová-15054712a" class="icon brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+                    <li><a href="mailto:mullerm2891@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+                </ul>
+                <p class="copyright">&copy; Martina. Design: <a href="http://html5up.net">HTML5 UP</a>.</p>
+            </section>
+
+        </div>
+
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+
+    </body>
+</html>

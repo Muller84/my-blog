@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Book Compass - Martina's Portfolio</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+    </head>
+    <body class="single is-preload">
+
+        <div id="wrapper">
+
+            <header id="header">
+                <h1><a href="index.html">CodeFlows</a></h1>
+                <nav class="links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">My projects</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                    </ul>
+                </nav>
+                <nav class="main">
+                    <ul>
+                        <li class="menu"><a class="fa-bars" href="#menu">Menu</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <section id="menu">
+                <section>
+                    <ul class="links">
+                        <li><a href="index.html"><h3>Home</h3></a></li>
+                        <li><a href="projects.html"><h3>My Projects</h3></a></li>
+                        <li><a href="cpp-noughts-crosses.html"><h3>Noughts and Crosses in C++</h3></a></li>
+                    </ul>
+                </section>
+            </section>
+
+            <div id="main">
+
+                <article class="post">
+                    <header>
+                        <div class="title">
+                            <nav style="margin-bottom: 30px; font-size: 0.8em; text-transform: uppercase; letter-spacing: 2px;">
+                                <a href="index.html" style="border-bottom: none; color: #888;">Home</a> 
+                                <span style="margin: 0 10px; color: #ccc;">/</span> 
+                                <a href="projects.html" style="border-bottom: none; color: #888;">Projects</a>
+                                <span style="margin: 0 10px; color: #ccc;">/</span> 
+                                <span style="color: #3b3b3b; font-weight: 700;">Book Compass</span>
+                            </nav>
+                            <h2><a href="#">Book Compass: Educational Flutter App</a></h2>
+                            <p>Personalised Book Recommendation System for Teachers</p>
+                        </div>
+                        <div class="meta">
+                            <time class="published" datetime="2025-12-12">December 12, 2025</time>
+                            <a href="about.html" class="author"><span class="name">Martina</span><img src="images/avatar.jpg" alt="Martina" /></a>
+                        </div>
+                    </header>
+
+                    <span class="image featured"><img src="images/kanban_screen.png" alt="Book Compass App Interface" /></span>
+
+                    <h3>Project Overview</h3>
+                    <p>Book Compass is a mobile application developed using the <strong>Flutter framework</strong>. Its main goal is to provide a data-driven platform for book recommendations. The app allows teachers to track reading progress, manage classroom assignments, and generate personalized suggestions based on each child's reading level and history.</p>
+
+                    <h3>Design & Methodology</h3>
+                    <p>The development followed a structured approach, starting with a <strong>Requirements Analysis</strong> using the <strong>MoSCoW method</strong> to prioritize core features. To ensure a scalable architecture, I designed <strong>UML Component Diagrams</strong> and <strong>User Journey Maps</strong>, which helped in visualizing the interaction between the Teacher dashboard and the Student profiles.</p>
+                    
+                    <h3>User Interface & Welcome Experience</h3>
+					<div class="row">
+						<div class="col-7 col-12-small">
+							<p>First impressions are vital in educational tools. The <strong>Welcome Screen</strong> was designed to be clean and inviting, ensuring that teachers can quickly authenticate and access their classroom data.</p>
+							<p>I focused on a consistent design language using reusable widgets to maintain a professional look across all screens. The interface prioritizes clarity, reducing cognitive load for educators managing busy classrooms.</p>
+						</div>
+						<div class="col-5 col-12-small">
+							<span class="image fit"><img src="images/welcome_screen.png" alt="Book Compass Welcome Screen" style="max-width: 100px; margin: 0 auto; display: block; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);" /></span>
+						</div>
+					</div>
+                    <h3>Technical Implementation</h3>
+                    <p>Key technical highlights include:
+                        <ul>
+                            <li><strong>Custom Recommendation Service:</strong> An algorithm that suggests books based on a child's reading level and previous history.</li>
+                            <li><strong>Data Services:</strong> Implementing real-time updates for reading feedback and student progress tracking.</li>
+                        </ul>
+                    </p>
+
+                    <h3>Quality Assurance & Bug Tracking</h3>
+                    <p>To ensure reliability, I performed rigorous <strong>Manual Functional Testing</strong>. Every feature was linked to a specific test case to verify its behavior before deployment. I used <strong>GitHub Issues</strong> and a <strong>Kanban board</strong> to track the development lifecycle and manage any identified bugs.</p>
+
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Test ID</th>
+                                    <th>Scenario</th>
+                                    <th>Expected Result</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>TC-01</td>
+                                    <td>Teacher logs in successfully</td>
+                                    <td>User is redirected to Teacher Dashboard</td>
+                                    <td style="color: green; font-weight: bold;">PASS</td>
+                                </tr>
+                                <tr>
+                                    <td>TC-02</td>
+                                    <td>Teacher views and navigates the dashboard</td>
+                                    <td>Dashboard display: Welcome message "Hello 'name'", App logo, Profile icon with menu, Sections: My class, Book tips, Feedback</td>
+                                    <td style="color: green; font-weight: bold;">PASS</td>
+                                </tr>
+                                <tr>
+                                    <td>TC-03</td>
+                                    <td>Recommendations</td>
+                                    <td>Algorithm suggests 1 or 2 books per week</td>
+                                    <td style="color: orange; font-weight: bold;">PENDING</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p><i class="icon solid fa-info-circle"></i> <em>Note: Future sprints will focus on fully implementing the recommendation algorithm.</em></p>
+
+                    <footer>
+						<ul class="stats">
+							<li><a href="projects.html" target="_blank">Mobile Development</a></li>
+							<li><a href="https://github.com/Muller84/Book-Compass-Flutter" class="icon brands fa-github" target="_blank" rel="noopener noreferrer"> GitHub Repo</a></li>
+							<li><a href="https://flutter.dev/" class="icon solid fa-mobile-alt" target="_blank" rel="noopener noreferrer"> Flutter / Dart</a></li>
+						</ul>
+					</footer>
+
+                    <hr />
+                    <section>
+                        <ul class="actions fit">
+                            <li><a href="azure-lab-project.html" class="button primary fit icon solid fa-arrow-right">Next Project: Azure Cloud Lab</a></li>
+                        </ul>
+                    </section>
+                </article>
+
+            </div>
+
+            <section id="footer">
+                <ul class="icons">
+                    <li><a href="https://github.com/Muller84" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+                    <li><a href="https://www.linkedin.com/in/martina-müllerová-15054712a" class="icon brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+                    <li><a href="mailto:mullerm2891@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+                </ul>
+                <p class="copyright">&copy; Martina. Design: <a href="http://html5up.net">HTML5 UP</a>.</p>
+            </section>
+
+        </div>
+
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+
+    </body>
+</html>

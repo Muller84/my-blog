@@ -1,0 +1,208 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>GitHub: A Beginner's Guide</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+    </head>
+    <body class="single is-preload">
+
+        <div id="wrapper">
+
+                <header id="header">
+                        <h1><a href="index.html">CodeFlows</a></h1>
+                        <nav class="links">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="projects.html">My projects</a></li>
+                                <li><a href="about.html">About Me</a></li>
+                            </ul>
+                        </nav>
+                        <nav class="main">
+                            <ul>
+                                <li class="search">
+                                    <a class="fa-search" href="#search">Search</a>
+                                    <form id="search" method="get" action="#">
+                                        <input type="text" name="query" placeholder="Search" />
+                                    </form>
+                                </li>
+                                <li class="menu">
+                                    <a class="fa-bars" href="#menu">Menu</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </header>
+
+                <section id="menu">
+                        <section>
+                            <ul class="links">
+                                <li>
+                                    <a href="index.html">
+                                        <h3>Home</h3>
+                                        <p>Back to the main page</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="projects.html">
+                                        <h3>My Projects</h3>
+                                        <p>Overview of all my work</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="about.html">
+                                        <h3>About Me</h3>
+                                        <p>Learn more about my background</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </section>
+                        <section>
+                            <ul class="actions stacked">
+                                <li>
+                                    <a href="https://github.com/Muller84?tab=repositories" class="button large fit icon brands fa-github" target="_blank">GitHub Profile</a>
+                                </li>
+                            </ul>
+                        </section>
+                    </section>
+
+                <div id="main">
+
+                        <article class="post">
+                            <header>
+                                <div class="title">
+                                    <nav style="margin-bottom: 30px; font-size: 0.8em; text-transform: uppercase; letter-spacing: 2px;">
+                                        <a href="index.html" style="border-bottom: none; color: #888;">Home</a> 
+                                        <span style="margin: 0 10px; color: #ccc;">/</span> 
+                                        <a href="projects.html" style="border-bottom: none; color: #888;">Projects</a>
+                                        <span style="margin: 0 10px; color: #ccc;">/</span> 
+                                        <span style="color: #3b3b3b; font-weight: 700;">GitHub Guide</span>
+                                    </nav>
+                                    <h2><a href="#">GitHub: A Beginner's Guide</a></h2>
+                                    <p>Everything you need to know about Version Control and Collaboration.</p>
+                                </div>
+                                <div class="meta">
+                                    <time class="published" datetime="2024-12-16">December 16, 2024</time>
+                                    <a href="about.html" class="author"><span class="name">Martina</span><img src="images/avatar.jpg" alt="Martina" /></a>
+                                </div>
+                            </header>
+                            
+                            <span class="image featured"><img src="images/gitHub1.png" alt="GitHub Sign Up" /></span>
+                            
+                            <p>GitHub is like a personal exhibition where you can display all your projects, from the smallest to the most ambitious. It’s a versioning platform, which means it allows you to track changes to your code over time and revert to previous versions. Versioning is essential for collaborating on projects, backing up your code, and keeping track of your code history. The platform is built on Git, the most widely used versioning system. If you want to learn more about Git and how it works, I recommend reading my previous article, <a href="learning-git.html">“Learning Git Through Small Projects”</a>.</p>
+
+                            <p>When I first published my first project on GitHub, I was nervous. I found the GitHub community to be incredibly welcoming and friendly. What’s more, GitHub is like my online portfolio. Future employers often look at GitHub profiles to see what someone has worked on and what kind of programmer they are. So why not show them what I can do?</p>
+
+                            <p>The goal of this article is to show you how to create a GitHub profile and how to get started using it.</p>
+
+                            <hr /> 
+                            <h3>Creating a GitHub Profile</h3>
+                            <p>The first step to sharing your code and collaborating with others is creating a GitHub profile. Here’s a step-by-step guide:</p>
+                            <span class="image main"><img src="images/gitHub_signUp.png" alt="GitHub Sign Up Form" /></span>
+                            <ul>
+                                <li><strong>Go to GitHub:</strong> Open your web browser and navigate to <a href="https://github.com/" target="_blank">github.com</a>.</li>
+                                <li><strong>Sign up:</strong> Click the “Sign up” button and follow the instructions.</li>
+                                <li><strong>Verify your account:</strong> Open the email GitHub sent you and click the verification link.</li>
+                                <li><strong>Customize:</strong> Add a profile picture and a short Bio to tell others who you are.</li>
+                            </ul>
+
+                            <span class="image main"><img src="images/verify-account-GitHub.png" alt="Email verification" /></span>
+
+                            <h3>Creating Your First Repository</h3>
+                            <p>A repository is like a folder where your project’s files are stored. Here is how to create one:</p>
+                            
+                            <span class="image main"><img src="images/new-repository-github.png" alt="New repository button" /></span>
+
+                            <ol>
+                                <li>Click the <strong>“+”</strong> button in the top right corner and select <strong>“New repository”</strong>.</li>
+                                <li>Give your repository a name (e.g., <code>my-first-project</code>).</li>
+                                <li>Choose if you want it to be <strong>Public</strong> or <strong>Private</strong>.</li>
+                                <li>Tick the box <strong>"Add a README file"</strong> (this is where you describe your project).</li>
+                                <li>Click <strong>“Create repository”</strong>.</li>
+                            </ol>
+
+                            <h3>What to do after creating a repository?</h3>
+                            <p>
+                                Once your repository is ready on GitHub, you need to get it onto your computer. 
+                                Using the command <code>git clone &lt;repository URL&gt;</code> copies the repository 
+                                from GitHub.com to your local machine.
+                            </p>
+
+                            <span class="image main"><img src="images/clony-repository-github.png" alt="GitHub Clone URL location" /></span>
+
+                            <p>
+                                In GitHub, you can create files and folders for your project. Using Git commands, 
+                                you can track changes, commit them, and upload them back to GitHub.
+                            </p>
+
+                            <h3>My Workflow: Frequent Commits</h3>
+                            <p>
+                                When developing my C++ projects, I used a strategy of frequent commits. After implementing 
+                                each piece of functionality, such as generating random numbers, I created a commit 
+                                with a brief but concise description.
+                            </p>
+
+                            <blockquote>
+                                "This allowed me to have a clear history of changes and easily revert to a previous 
+                                version if necessary."
+                            </blockquote>
+
+                            <p>
+                                For example, when I implemented input handling to prevent crashes, but the new code caused 
+                                unexpected behavior, I used the <code>git revert &lt;hash_commit&gt;</code> command. 
+                                This created a new commit that undid the changes while preserving the complete history.
+                            </p>
+
+                            <h3>Reflection</h3>
+                            <blockquote>
+                                "Regular commits with concise descriptions are key. I learned from this experience and now try to write commit messages as best I can. Sharing my projects assists me in learning while helping others out."
+                            </blockquote>
+
+                            <h3>Conclusion</h3>
+                            <p>
+                                GitHub is more than just a storage for code; it's a place where you grow as a developer. 
+                                By sharing your work, you open doors to feedback and collaboration that can take your projects 
+                                to the next level. Don't be afraid to make mistakes – that's what Git history is for!
+                            </p>
+
+                            <footer>
+                                <ul class="stats">
+                                    <li><a href="projects.html">Development</a></li>
+                                    <li><a href="https://git-scm.com/" class="icon solid fa-code" target="_blank"> Git</a></li>
+                                    <li><a href="https://github.com/" class="icon brands fa-github" target="_blank"> GitHub</a></li>
+                                </ul>
+                            </footer>
+
+                            <hr />
+                            <section>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <ul class="actions fit">
+                                            <li><a href="ruby-on-rails.html" class="button primary fit icon solid fa-arrow-right">Next Project: Ruby on Rails</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </section>
+                        </article>
+
+                    </div>
+
+                <section id="footer">
+                        <ul class="icons">
+                            <li><a href="https://github.com/Muller84" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+                            <li><a href="https://www.linkedin.com/in/martina-müllerová-15054712a" class="icon brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+                            <li><a href="mailto:mullerm2891@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+                        </ul>
+                        <p class="copyright">&copy; Martina. Design: <a href="http://html5up.net">HTML5 UP</a>.</p>
+                    </section>
+
+            </div>
+
+        <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/browser.min.js"></script>
+            <script src="assets/js/breakpoints.min.js"></script>
+            <script src="assets/js/util.js"></script>
+            <script src="assets/js/main.js"></script>
+
+    </body>
+</html>

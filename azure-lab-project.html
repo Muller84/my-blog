@@ -1,0 +1,182 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Building a Hybrid Cloud Environment - CodeFlows</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+    </head>
+    <body class="single is-preload">
+
+        <div id="wrapper">
+
+                <header id="header">
+                        <h1><a href="index.html">CodeFlows</a></h1>
+                        <nav class="links">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="projects.html">My projects</a></li>
+                                <li><a href="about.html">About Me</a></li>
+                            </ul>
+                        </nav>
+                        <nav class="main">
+                            <ul>
+                                <li class="search">
+                                    <a class="fa-search" href="#search">Search</a>
+                                    <form id="search" method="get" action="#">
+                                        <input type="text" name="query" placeholder="Search" />
+                                    </form>
+                                </li>
+                                <li class="menu">
+                                    <a class="fa-bars" href="#menu">Menu</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </header>
+
+                <section id="menu">
+                        <section>
+                            <ul class="links">
+                                <li>
+                                    <a href="index.html">
+                                        <h3>Home</h3>
+                                        <p>Back to the main page</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="projects.html">
+                                        <h3>My Projects</h3>
+                                        <p>Overview of all my work</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="about.html">
+                                        <h3>About Me</h3>
+                                        <p>Learn more about my background</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </section>
+                        <section>
+                            <ul class="actions stacked">
+                                <li>
+                                    <a href="https://github.com/Muller84?tab=repositories" class="button large fit icon brands fa-github" target="_blank">GitHub Profile</a>
+                                </li>
+                            </ul>
+                        </section>
+                    </section>
+
+                <div id="main">
+
+                        <article class="post">
+                            <header>
+                                <div class="title">
+                                    <nav style="margin-bottom: 30px; font-size: 0.8em; text-transform: uppercase; letter-spacing: 2px;">
+                                        <a href="index.html" style="border-bottom: none; color: #888;">Home</a> 
+                                        <span style="margin: 0 10px; color: #ccc;">/</span> 
+                                        <a href="projects.html" style="border-bottom: none; color: #888;">Projects</a>
+                                        <span style="margin: 0 10px; color: #ccc;">/</span> 
+                                        <span style="color: #3b3b3b; font-weight: 700;">Azure Cloud Lab</span>
+                                    </nav>
+                                    <h2><a href="#">Building a Hybrid Cloud Environment: Azure Lab Services</a></h2>
+                                    <p>Case study: Implementing Windows Server, Ubuntu clients, and Gitea in a cloud lab.</p>
+                                </div>
+                                <div class="meta">
+                                    <time class="published" datetime="2026-01-02">January 2, 2026</time>
+                                    <a href="about.html" class="author"><span class="name">Martina</span><img src="images/avatar.jpg" alt="Martina" /></a>
+                                </div>
+                            </header>
+
+                            <span class="image featured"><img src="images/cloud_com1.png" alt="Azure Lab Services Architecture" /></span>
+                            
+                            <p>In this project, I focused on designing and implementing a virtualized hybrid cloud environment. The goal was to simulate a real-world enterprise infrastructure where central services are hosted on a server and accessed by specialized client workstations.</p>
+
+                            <h3>Virtual Machine Design</h3>
+                            <p>The core of the lab consists of two distinct virtual machines tailored for specific roles within the Azure ecosystem:</p>
+
+                            <div class="table-wrapper">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Virtual Machine</th>
+                                            <th>Operating System</th>
+                                            <th>Hardware Spec</th>
+                                            <th>Primary Role</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><strong>Server Node</strong></td>
+                                            <td>Windows Server</td>
+                                            <td>1 vCPU, 2GB RAM</td>
+                                            <td>Gitea Host & File Sharing (SMB)</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Client Node</strong></td>
+                                            <td>Ubuntu 24.04</td>
+                                            <td>2 vCPU, 2GB RAM</td>
+                                            <td>Development & Testing Environment</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <p><i class="icon solid fa-info-circle"></i> <strong>Note on Infrastructure:</strong> Hardware was selected to stay within the Azure Lab Services budget while maintaining performance for Git operations.</p>
+
+                            <h3>Network Configuration & Storage</h3>
+                            
+                            <p>To ensure secure communication, both machines were integrated into a shared virtual network. I implemented <strong>Windows File Sharing</strong> (SMB) to allow seamless data exchange between the Windows server and the Ubuntu client. This setup mimics a professional corporate environment where data is centralized yet easily accessible to authorized workstations.</p>
+
+                            <h3>Deploying Gitea for Data Sovereignty</h3>
+                            <p>A key part of the assignment was setting up <strong>Gitea</strong> on the Windows Server. This lightweight Git service was chosen to ensure complete <strong>data sovereignty</strong>. By hosting the source code internally within the cloud lab, I eliminated reliance on third-party providers, ensuring that the development environment remains operational even without an active internet connection.</p>
+
+                            <hr />
+
+                            <h3>Maintenance & Troubleshooting</h3>
+                            <p>During the deployment, I faced challenges with <strong>Gitea access</strong>. Initially, the service was only accessible via <code>localhost</code>. I had to reconfigure the <code>app.ini</code> file and adjust the firewall settings to allow the Ubuntu client to connect via the server's internal IP address. This experience was crucial for understanding network security and service binding.</p>
+
+                            <blockquote>
+                                "Ensuring data sovereignty through self-hosted tools like Gitea is a vital skill for modern cloud engineers. This project allowed me to bridge the gap between local infrastructure and cloud scalability."
+                            </blockquote>
+
+                            <footer>
+                                <ul class="stats">
+                                    <li><a href="projects.html">Cloud Computing</a></li>
+                                    <li><a href="https://labs.azure.com/" class="icon solid fa-cloud" target="_blank" rel="noopener noreferrer"> Azure</a></li>
+                                    <li><a href="https://www.proxmox.com/en/" class="icon solid fa-server" target="_blank" rel="noopener noreferrer"> Proxmox</a></li>
+                                </ul>
+                            </footer>
+
+                            <hr />
+                            <section>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <ul class="actions fit">
+                                            <li><a href="cpp-noughts-crosses.html" class="button primary fit icon solid fa-arrow-right">Next Project: Noughts and Crosses in C++</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </section>
+
+                        </article>
+                    </div>
+
+                <section id="footer">
+                        <ul class="icons">
+                            <li><a href="https://github.com/Muller84" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+                            <li><a href="https://www.linkedin.com/in/martina-müllerová-15054712a" class="icon brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+                            <li><a href="mailto:mullerm2891@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+                        </ul>
+                        <p class="copyright">&copy; Martina. Design: <a href="http://html5up.net">HTML5 UP</a>.</p>
+                    </section>
+
+            </div>
+
+        <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/browser.min.js"></script>
+            <script src="assets/js/breakpoints.min.js"></script>
+            <script src="assets/js/util.js"></script>
+            <script src="assets/js/main.js"></script>
+
+    </body>
+</html>

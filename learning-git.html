@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Learning Git - CodeFlows</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+    </head>
+    <body class="single is-preload">
+
+        <div id="wrapper">
+
+            <header id="header">
+                <h1><a href="index.html">CodeFlows</a></h1>
+                <nav class="links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">My projects</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                    </ul>
+                </nav>
+                <nav class="main">
+                    <ul>
+                        <li class="search">
+                            <a class="fa-search" href="#search">Search</a>
+                            <form id="search" method="get" action="#">
+                                <input type="text" name="query" placeholder="Search" />
+                            </form>
+                        </li>
+                        <li class="menu">
+                            <a class="fa-bars" href="#menu">Menu</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+            <section id="menu">
+                <section>
+                    <ul class="links">
+                        <li><a href="index.html"><h3>Home</h3><p>Back to the main page</p></a></li>
+                        <li><a href="projects.html"><h3>My Projects</h3><p>Overview of all my work</p></a></li>
+                        <li><a href="about.html"><h3>About Me</h3><p>Learn more about my background</p></a></li>
+                    </ul>
+                </section>
+                <section>
+                    <ul class="actions stacked">
+                        <li><a href="https://github.com/Muller84?tab=repositories" class="button large fit icon brands fa-github" target="_blank" rel="noopener noreferrer">GitHub Profile</a></li>
+                    </ul>
+                </section>
+            </section>
+
+            <div id="main">
+                <article class="post">
+                    <header>
+                        <div class="title">
+                            <nav style="margin-bottom: 30px; font-size: 0.8em; text-transform: uppercase; letter-spacing: 2px;">
+                                <a href="index.html" style="border-bottom: none; color: #888;">Home</a> 
+                                <span style="margin: 0 10px; color: #ccc;">/</span> 
+                                <a href="projects.html" style="border-bottom: none; color: #888;">Projects</a>
+                                <span style="margin: 0 10px; color: #ccc;">/</span> 
+                                <span style="color: #3b3b3b; font-weight: 700;">Git & Version Control</span>
+                            </nav>
+                            <h2><a href="#">Learning Git Through Small Projects</a></h2>
+                            <p>Mastering version control with C++ and Python experiments.</p>
+                        </div>
+                        <div class="meta">
+                            <time class="published" datetime="2024-12-20">December 20, 2024</time>
+                            <a href="about.html" class="author"><span class="name">Martina</span><img src="images/avatar.jpg" alt="Martina" /></a>
+                        </div>
+                    </header>
+
+                    <span class="image featured"><img src="images/git2.png" alt="Git Flow Banner" /></span>
+
+                    <p>As part of my personal development, I decided to delve deeper into version control systems and chose the popular <strong>Git</strong>. For practical application, I selected several simple programming projects to familiarize myself with its core functionalities.</p>
+
+                    <div class="row">
+                        <div class="col-8 col-12-small">
+                            <h3>Tools & Environment</h3>
+                            <p>I have used <strong>Cmder</strong> (a terminal emulator for Windows) and <strong>GitHub</strong> to work with Git. Code versioning is absolutely essential for every programmer. It allows us to track each change, gives the ability to roll back in time if anything goes wrong, and acts as a professional backup.</p>
+                        </div>
+                        <div class="col-4 col-12-small">
+                            <span class="image fit"><img src="images/cmder_Git.png" alt="Cmder interface" style="border-radius: 8px;" /></span>
+                        </div>
+                    </div>
+
+                    
+
+[Image of basic Git workflow diagram]
+
+
+                    <h3>Basic Git Commands</h3>
+                    <p>During these projects, I mastered the fundamental workflow that every developer uses daily:</p>
+                    <ul>
+                        <li><code>git init</code> & <code>git clone</code> – Initializing and localizing repositories.</li>
+                        <li><code>git status</code> – Monitoring changes in the working directory.</li>
+                        <li><code>git add</code> & <code>git commit</code> – Staging and saving changes with descriptive messages.</li>
+                        <li><code>git push</code> & <code>git pull</code> – Synchronizing local work with remote GitHub repositories.</li>
+                    </ul>
+
+                    <h3>Reflection & Challenges</h3>
+                    <p>I encountered a challenge with authentication when password-based push was deprecated. I had to switch to <strong>Personal Access Tokens (PAT)</strong>. Another obstacle was managing workflow permissions, which I solved using <code>git update-index --skip-worktree</code>.</p>
+
+                    <div class="row">
+                        <div class="col-6 col-12-medium">
+                            <h4>Key Challenges Overcome</h4>
+                            <ul>
+                                <li>Transition to <strong>Personal Access Tokens (PAT)</strong>.</li>
+                                <li>Resolving permission issues within the Git index.</li>
+                                <li>Mastering <strong>Merge Conflict</strong> resolution in C++ files.</li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-12-medium">
+                            <h4>Technical Takeaways</h4>
+                            <ul>
+                                <li>Understanding of distributed version control.</li>
+                                <li>Maintaining clean and <strong>concise commit history</strong>.</li>
+                                <li>Effective use of terminal emulators for automation.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <blockquote>
+                        "Regular commits with concise descriptions are key. This experience strengthened my knowledge of resolving permission issues and manipulating the Git index."
+                    </blockquote>
+
+                    <footer>
+                        <ul class="stats">
+                            <li><a href="projects.html">Development</a></li>
+                            <li><a href="https://git-scm.com/" class="icon solid fa-code" target="_blank" rel="noopener noreferrer"> Git</a></li>
+                            <li><a href="https://github.com/" class="icon brands fa-github" target="_blank" rel="noopener noreferrer"> GitHub</a></li>
+                        </ul>
+                    </footer>
+
+                    <hr />
+                    <section>
+                        <ul class="actions fit">
+                            <li><a href="card-game-war.html" class="button primary fit icon solid fa-arrow-right">Next Project: Card Game War</a></li>
+                        </ul>
+                    </section>
+
+                </article>
+            </div>
+
+            <section id="footer">
+                <ul class="icons">
+                    <li><a href="https://github.com/Muller84" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+                    <li><a href="https://www.linkedin.com/in/martina-müllerová-15054712a" class="icon brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+                    <li><a href="mailto:mullerm2891@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+                </ul>
+                <p class="copyright">&copy; Martina. Design: <a href="http://html5up.net">HTML5 UP</a>.</p>
+            </section>
+
+        </div>
+
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+
+    </body>
+</html>

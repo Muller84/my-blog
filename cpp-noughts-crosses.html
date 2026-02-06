@@ -1,0 +1,193 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Noughts and Crosses in C++</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="single is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">CodeFlows</a></h1>
+						<nav class="links">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="projects.html">My projects</a></li>
+								<li><a href="about.html">About Me</a></li>
+							</ul>
+						</nav>
+						<nav class="main">
+							<ul>
+								<li class="search">
+									<a class="fa-search" href="#search">Search</a>
+									<form id="search" method="get" action="#">
+										<input type="text" name="query" placeholder="Search" />
+									</form>
+								</li>
+								<li class="menu">
+									<a class="fa-bars" href="#menu">Menu</a>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<section id="menu">
+
+						<!-- Links -->
+							<section>
+								<section id="menu">
+									<section>
+										<ul class="links">
+											<li>
+												<a href="index.html">
+													<h3>Home</h3>
+													<p>Back to the main page</p>
+												</a>
+											</li>
+											<li>
+												<a href="projects.html">
+													<h3>My Projects</h3>
+													<p>Overview of all my work</p>
+												</a>
+											</li>
+											<li>
+												<a href="about.html">
+													<h3>About Me</h3>
+													<p>Learn more about my background</p>
+												</a>
+											</li>
+										</ul>
+									</section>
+									<section>
+										<ul class="actions stacked">
+											<li>
+												<a href="https://github.com/Muller84?tab=repositories" class="button large fit icon brands fa-github" target="_blank">GitHub Profile</a>
+											</li>
+										</ul>
+									</section>
+								</section>
+							</section>
+
+						<!-- Actions -->
+							<section>
+    							<ul class="actions stacked">
+        							<li>
+            							<a href="https://github.com/Muller84?tab=repositories" 
+										class="button large fit icon brands fa-github" 
+               							target="_blank" 
+               							rel="noopener noreferrer">
+               							GitHub Profile
+            							</a>
+        							</li>
+    							</ul>
+							</section>
+
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<article class="post">
+							<header>
+								<div class="title">
+									<nav style="margin-bottom: 30px; font-size: 0.8em; text-transform: uppercase; letter-spacing: 2px;">
+										<a href="index.html" style="border-bottom: none; color: #888;">Home</a> 
+										<span style="margin: 0 10px; color: #ccc;">/</span> 
+										<a href="projects.html" style="border-bottom: none; color: #888;">Projects</a>
+										<span style="margin: 0 10px; color: #ccc;">/</span> 
+										<span style="color: #3b3b3b; font-weight: 700;">Noughts and Crosses</span>
+									</nav>
+									<h2><a href="#">Noughts and Crosses in C++</a></h2>
+									<p>A classic console-based game demonstrating core programming principles.</p>
+								</div>
+								<div class="meta">
+									<time class="published" datetime="2024-11-19">November 19, 2024</time>
+									<a href="about.html" class="author"><span class="name">Martina</span><img src="images/avatar.jpg" alt="Martina" /></a>
+								</div>
+							</header>
+
+							<span class="image featured"><img src="images/C_noughts1.jpg" alt="C++ Noughts and Crosses Cover" /></span>
+
+							<p><strong>This project presents an implementation of the classic Noughts and Crosses game in C++.</strong> It serves as a practical demonstration of utilizing fundamental programming concepts to create an interactive console application.</p>
+
+							<h3>Technical Core</h3>
+							<p>The development of this game focused on clean logic and efficient data handling:</p>
+							<ul>
+								<li><i class="icon solid fa-layer-group" style="margin-right: 10px;"></i> <strong>Data Structures:</strong> I used an <code>enum class PlayerSymbol</code> to represent cell states and a <code>matrix[3][3]</code> to manage the board.</li>
+								<li><i class="icon solid fa-code-branch" style="margin-right: 10px;"></i> <strong>Control Flow:</strong> Logical checks for win conditions and draws are handled through specialized functions.</li>
+								<li><i class="icon solid fa-music" style="margin-right: 10px;"></i> <strong>System Integration:</strong> The game includes Windows API calls for sound effects and console color management.</li>
+							</ul>
+
+							<span class="image main"><img src="images/cpp_code_screen.png" alt="C++ Code Snippet - Data Structures and Enums" /></span>
+
+
+							<h3>Gameplay Mechanics</h3>
+							<p>The game features a turn-based system where two players choose their symbols (X or O). The interface is designed to be user-friendly, providing clear instructions and validating every move to prevent illegal plays or overwriting symbols.</p>
+
+							<blockquote>
+								"The game ends when a player creates a row of three identical symbols horizontally, vertically, or diagonally, or when the board is full, resulting in a draw."
+							</blockquote>
+
+							<hr />
+
+							<h3>Reflection & Learning</h3>
+							<p>Implementing this game strengthened my understanding of <strong>algorithms for turn-based systems</strong> and input validation. I focused on creating a clean user interface within the console, adding personal touches like player names to make the experience more engaging.</p>
+							<p>Looking forward, this foundation in C++ logic will be instrumental as I move towards more complex data structures and visually sophisticated games.</p>
+
+							<footer>
+								<ul class="actions">
+									<li><a href="https://youtu.be/vqgNfzixkmo" class="button large icon brands fa-youtube" target="_blank">Watch Gameplay Video</a></li>
+									<li><a href="https://github.com/Muller84/Noughts-and-Crosses" class="button large icon brands fa-github" target="_blank">View Source Code</a></li>
+								</ul>
+								<ul class="stats">
+									<li><a href="projects.html">C++ Development</a></li>
+									<li><a href="#" class="icon solid fa-gamepad">Gaming</a></li>
+								</ul>
+							</footer>
+
+							<hr />
+							<section>
+								<div class="row">
+									<div class="col-12">
+										<ul class="actions fit">
+											<li><a href="learning-git.html" class="button primary fit icon solid fa-arrow-right">Next Project: Learning Git</a></li>
+										</ul>
+									</div>
+								</div>
+							</section>
+						</article>
+
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+    							<ul class="icons">
+        							<li><a href="https://github.com/Muller84" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+        							<li><a href="https://www.linkedin.com/in/martina-müllerová-15054712a" class="icon brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+        							<li><a href="mailto:mullerm2891@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+    							</ul>
+    
+								<p class="copyright">&copy; Martina. Design: <a href="http://html5up.net">HTML5 UP</a>.</p>
+
+					</section>
+
+			</div>
+
+			<a href="#header" id="back-to-top" class="button icon solid fa-chevron-up"></a>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
