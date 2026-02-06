@@ -28,4 +28,4 @@ jobs:
           context: .
           push: true
           # Tady se vytvoří adresa tvého balíčku (vše malými písmeny)
-          tags: ghcr.io/${{ github.repository_owner }}/my-blog:latest
+          tags: ghcr.io/muller84/my-blog:latest
